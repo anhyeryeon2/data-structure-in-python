@@ -21,7 +21,7 @@ class Stack:
             return "error"
         return self.data[-1]
 
-def postfixeval(expr):
+def postfixeval(expr): # postfix 계산 
     s = Stack()
     for token in expr:
         if token in "+-*/":
