@@ -42,6 +42,6 @@ def postfixeval(expr): # postfix 계산
     return s.pop()
 
 expr = input()
-print(postfixeval(expr))
+print(postfixeval(expr)) #계산값 출력
 
 	
