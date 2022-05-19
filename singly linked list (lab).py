@@ -33,7 +33,7 @@ class LinkedList:
 			del removed
 
 		def insert_first(self, item): # insert before head
-			new_node = Node(item) #head노드 이전에 삽입#새노드 삽입해야함 
+			new_node = Node(item) #head노드 이전에 삽입   #새노드 삽입해야함 
 			self.insert_node(p=None, new_node=new_node)
 
 		def insert_last(self, item): # insert after tail
@@ -85,7 +85,6 @@ class LinkedList:
 				b=c
 			self.head =a
 
-#########함수 콜하기 위한 수정 안해도됨 
 L = LinkedList()
 while True:
 	cmd = input()
