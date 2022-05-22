@@ -1,7 +1,7 @@
 import random
 import time
 
-"""To check if the array is sorted"""
+#To check if the array is sorted
 def is_sorted(A):
 	if len(A)<2:
 		return True
