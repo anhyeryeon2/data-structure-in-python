@@ -15,7 +15,7 @@ def inorder(root):
         inorder(root.left)
         print(root.item, end=" ")
         inorder(root.right)
-    '''
+    ''' 
     ret =[]
     if root.left:
         ret +=root.left.inorder()
@@ -99,7 +99,7 @@ def height(root):
     return max(l,r)+1
 
 
-    count =0      하나만 페일
+    count =0      
     if root.left:
         count +=1
     if root.right:
