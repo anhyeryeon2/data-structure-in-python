@@ -2,7 +2,7 @@ class Stack:
     def __init__(self):  # stack 초기화
         self.data = []
 
-    def size(self):
+    def size(self):  # ㅇ
         return len(self.data)
 
     def is_empty(self):
