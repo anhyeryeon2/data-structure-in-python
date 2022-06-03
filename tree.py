@@ -1,6 +1,8 @@
 class Node:
     def __init__(self, item=None, left=None, right=None):
-        self.item, self.left, self.right = item, left, right
+        self.item= item 
+        self.left=left
+        self.right =right
 
 
 def preorder(root):
@@ -55,7 +57,7 @@ def search(root, x):
         return node
     if root.right:
         node = search(root.right, x)
-    return node
+        return node
 
 
 def insert_simple(p, side, x):
