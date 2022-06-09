@@ -45,7 +45,7 @@ class LinkedList:
 				#p.link 가 none이면 p가 tail
 				p=p.link  # 옮기면서 순회 
 			self.insert_node(p=p,new_node=new_node)
-#================================================= 
+##================================================= 
 		def search(self, item): # returns the node holding item
 			node = self.head
 			while node is not None:
@@ -70,7 +70,7 @@ class LinkedList:
 			if removed is None : #찾으려는게없으면 
 				print("item not Found")
 				return
-			#delete_node로 삮제 # 찾으려는거있으면
+			##delete_node로 삮제 # 찾으려는거있으면
 			self.delete_node(p=p,removed=removed)
 			
 			
