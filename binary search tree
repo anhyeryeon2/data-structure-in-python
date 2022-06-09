@@ -17,9 +17,9 @@ class Node:
 """ Binary Search Tree Class """
 class BinarySearchTree:
 	def __init__(self, root=None):
-		self.root = root
+		self.root = root  
 	
-	def search(self, key): # loop version
+	def search(self, key):
 		root = self.root
 		while root is not None:
 			if key == root.key():
