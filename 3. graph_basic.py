@@ -5,7 +5,7 @@ class Graph:
 
     def insert_edge(self,v1,v2):
         vs =[]
-        self.M[v1][v2] = 1
+        self.M[v1][v2] = 1  # 연결됨
         self.M[v2][v1] = 1
 
     def adjacent_vertices(self,v):
@@ -13,8 +13,9 @@ class Graph:
         for j in range(self.N):
             if self.M[v][j] ==1:
                 vs.append(j)
-            # 뭐 더 적어야하나
+            # 뭐 더 적어야하나 ㄴㄴ ㄴ
         return vs
+    
 class DFS:
     def __init__(self,G):
         self.G = G
