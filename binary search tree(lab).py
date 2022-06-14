@@ -35,7 +35,7 @@ class BinarySearchTree:
 
         return root
 
-    """ returns node holding key and its parent"""
+    """ returns node holding key and its parentdsds"""
 
     def search_p(self, key):
         root, parent = self.root, None
