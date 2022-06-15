@@ -28,7 +28,7 @@ class BinarySearchTree:
 		
 		return root
 	
-	def search_p(self, key):      # parent까지 같이 출력
+	def search_p(self, key):      
 		root, parent = self.root, None
 		while root is not None:
 			if key == root.key():
@@ -42,7 +42,7 @@ class BinarySearchTree:
 		
 		return root, parent
 	
-	def insert(self, key, value=None):   #########어디에 어떻게 insert한다는거야 
+	def insert(self, key, value=None):   
 		node, p = self.search_p(key)
 		if node is not None and k==node.key():
 			node.set_value(value)
@@ -63,7 +63,7 @@ class BinarySearchTree:
 	p: parent of <node>
 	rep_p: parent of <rep_node>
 	"""
-	def replace(self, node, rep_node, p, rep_p):  ################################
+	def replace(self, node, rep_node, p, rep_p):  
 		
 		# replace p-to-node link
 		if p is None: self.root = rep_node
@@ -81,7 +81,7 @@ class BinarySearchTree:
 		
 		rep_p.left = None
 			
-	def find_min_p(self, root, p):###############
+	def find_min_p(self, root, p):
 		while root.left is not None:
 			p = root
 			root = root.left
@@ -126,7 +126,7 @@ class BinarySearchTree:
 			self.inorder(root.right)
 	
 
-T = BinarySearchTree()     # T = 이진탐색트리 
+T = BinarySearchTree()     
 while True:
 	cmd = input()
 	if cmd == 'exit':
