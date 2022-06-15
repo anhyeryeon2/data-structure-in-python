@@ -31,7 +31,7 @@ def search(root, x):
 	if root.right: node = search(root.right, x)
 	return node
 
-def insert_simple(p, side, x):   ##################simple이 뭐지 뭐가다른거지 
+def insert_simple(p, side, x):   #
 	global root
 	if root is None:
 		root = Node(x)
