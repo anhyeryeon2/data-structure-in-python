@@ -1,6 +1,8 @@
 class Node:
 	def __init__(self, item=None, left=None, right=None):
-		self.item, self.left, self.right = item, left, right
+		self.item = item
+		self.left = right
+		elf.right =right
 
 def preorder(root):   # preorder :  self - 왼 - 오
 	if root is not None:   
