@@ -49,7 +49,7 @@ D = [math.inf for _ in range(g.N)]  # distance-to-all-vertices = infinity
 D[source] = 0  # distance to source(self) is zero
 
 while len(S) < g.N: # while there are unvisited vertices
-    # I. find the vertex with min distance, among the unknown vertices
+             # I. find the vertex with min distance, among the unknown vertices
     print(len(S))
     v_min = None
     min_dist = math.inf
@@ -60,10 +60,10 @@ while len(S) < g.N: # while there are unvisited vertices
             min_dist = D[v]
             v_min = v
     print(v_min)
-    # II. add <v_min> to the cloud
+                      # II. add <v_min> to the cloud
     S.append(v_min)
 
-    # III. relax the all the adjacent edges from <v_min>
+                      # III. relax the all the adjacent edges from <v_min>
     for z in g.adjacent_vertices(v_min):
         if D[v_min]+g.M[v_min][z] < D[z]:
             D[z] = D[v_min]+g.M[v_min][z]
