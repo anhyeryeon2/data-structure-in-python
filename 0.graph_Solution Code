@@ -50,8 +50,9 @@ class DFS:
 				else:
 					self.E_label[v][w] = self.BACK
 		
-# Input: number of vertices
+#  Input: number of vertices
 # and initialize Graph
+
 N = int(input())
 G = Graph(N)
 	
